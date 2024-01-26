@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .ka {
+        background-color: aqua;
+      }
+      .ka > span {
+        animation-name: karthik;
+        animation-duration: 2s;
+        animation-iteration-count: 1s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: larger;
+        font-style: oblique;
+      }
+      .rt {
+        animation-delay: 1s;
+      }
+      .th {
+        animation-delay: 2s;
+      }
+      .ik {
+        animation-delay: 3s;
+      }
+      .ku {
+        animation-delay: 4s;
+      }
+      .ma {
+        animation-delay: 5s;
+      }
+      .ry {
+        animation-delay: 6s;
+      }
+      @keyframes karthik {
+        0% {
+          opacity: 0.3;
+        }
+        25% {
+          opacity: 0.5;
+        }
+        75% {
+          opacity: 0.7;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      /*task2*/
+      .karthi {
+        position: relative;
+        top: 50px;
+        background-color: aquamarine;
+      }
+      button {
+        margin-left: 200px;
+        padding: 20px;
+        margin: 20px;
+      }
+      .su {
+        width: 10px;
+        height: 100px;
+        visibility: hidden;
+        transition: width 3s, height 2s;
+        background-color: green;
+      }
+      .va:hover ~ .su {
+        visibility: visible;
+        width: 100px;
+        height: 100px;
+      }
+      .ni {
+        width: 30px;
+        height: 200px;
+        visibility: hidden;
+        transition: width 2s, height 4s;
+      }
+      .sa:hover ~ .ni {
+        visibility: visible;
+        width: 300px;
+        height: 120px;
+        background-color: coral;
+      }
+      .lk {
+        width: 30px;
+        height: 100px;
+        visibility: hidden;
+        transition: width 3s, height 5s;
+      }
+      .nt:hover ~ .lk {
+        width: 600px;
+        height: 130px;
+        visibility: visible;
+        background-color: indigo;
+      }
+      .um {
+        width: 40px;
+        height: 120px;
+        visibility: hidden;
+        transition: width 4s, height 5s;
+      }
+      .hi:hover ~ .um {
+        width: 900px;
+        height: 150px;
+        visibility: visible;
+        background-color: chocolate;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ka" style="text-align: center">
+      <span class="rt">K</span>
+      <span class="th">A</span>
+      <span class="ik">R</span>
+      <span class="ku">T</span>
+      <span class="ma">H</span>
+      <span class="ry">I</span>
+    </div>
+    <center>
+      <marquee style="background-color: bisque" direction="right"
+        ><h1>TASK 2</h1></marquee
+      >
+    </center>
+    <div class="karthi">
+      <button class="va">25</button>
+      <button class="sa">50</button>
+      <button class="nt">70</button>
+      <button class="hi">100</button><br /><br />
+      <div class="su">loading25%</div>
+      <div class="ni">loading50%</div>
+      <div class="lk">loading75%</div>
+      <div class="um">loading100%</div>
+    </div>
+  </body>
+</html>
